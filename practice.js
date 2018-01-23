@@ -14,7 +14,10 @@
   Then alert your name using dot notation.
 */
 
-//Code here
+let me ={
+  name: 'MJ',
+  age: 40,
+};
 
 
 
@@ -26,6 +29,14 @@
 */
 
 //Code here
+let favoriteThings= {
+  band: 'Commodores',
+  food: 'Curry',
+  person: 'Michael',
+  book: 'Javacript For Dummy',
+  movie: 'Bad Boys',
+  holiday: 'Fourth Of July!'
+}
 
 
 
@@ -34,7 +45,9 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Accord';
+favoriteThings.brand = 'Honda';
+console.log(favoriteThings)
 
 
 /*
@@ -42,6 +55,8 @@
 */
 
 //Code here
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 
@@ -56,7 +71,9 @@
 */
 
 //Code here
-
+let backPack = {}
+let item = 'firstpocket';
+backPack.item = 'chapstick';
 
 
 /*
@@ -65,7 +82,7 @@
 
 //Code here
 
-
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -74,7 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack)
 
 
 ////////// PROBLEM 4 //////////
@@ -97,6 +114,8 @@ var user2 = {
 */
 
 //Code Here
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmountain.in';
 
 
 
@@ -109,6 +128,7 @@ var user2 = {
 */
 
 //Code Here
+let methodCollection = {};
 
 
 
@@ -118,7 +138,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alerthello = function(){alert('hello');};
+methodCollection.loghello = function(){console.log('hello');};
 
 
 /*
@@ -126,7 +147,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alerthello();
+methodCollection.loghello();
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +159,14 @@ var user2 = {
 */
 
 //Code Here
-
+let makeperson = (name, birthday,ssn) => {
+  return newObj={
+    name,
+    birthday,
+    ssn,
+  }
+};
+makeperson('Erik', '5/25/1948', 9999999999);
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +177,12 @@ var user2 = {
 */
 
 //Code Here
-
+let MakeCard = (cardNumber, expiratiomDate, securityCode) => {
+  return Obj={
+    cardNumber,
+    expirationDate,
+    securityCode,
+  }
+};
+makeCard('01276590724', '09/10/2028', '059' );
 
